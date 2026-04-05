@@ -1,0 +1,14 @@
+<robot name="robot">
+  <!--Descripción de los eslabones-->
+  <link>
+    <!--Elementos visuales: geometría, origen, material-->
+    <!--Elementos de colisión: geometría, origen-->
+    <!--Elementos inerciales: masa, centro de masa, tensor de inercia-->
+  </link>
+  <!--Descripción de las juntas-->
+  
+  <joint> <!--tipo de junta-->
+    <!--Eslabón padre y eslabón hijo-->
+    <!--Posición, eje de movimiento, límites de posición, velocidad y par-->
+  </joint>
+</robot>

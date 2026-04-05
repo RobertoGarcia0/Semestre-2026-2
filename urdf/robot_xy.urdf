@@ -1,0 +1,70 @@
+<robot name="robot">
+  <!--Descripción de los eslabones-->
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="0.5 0.1 0.5"/>
+      </geometry>
+      <origin xyz="0 -0.05 0"/>
+      <material name="black">
+        <color rgba="0 0 0 0.5"/>
+      </material>
+    </visual>
+  </link>
+
+  <link name="shoulder_link">
+    <visual>
+      <geometry>
+        <box size="0.3 0.05 0.05"/>
+      </geometry>
+      <origin xyz="0.15 0 0"/>
+      <material name="cyan">
+        <color rgba="0 1 1 1"/>
+      </material>
+    </visual>
+  </link>
+  <link name="arm_link">
+    <visual>
+      <geometry>
+        <box size="0.3 0.05 0.05"/>
+      </geometry>
+      <origin xyz="0.15 0 0"/>
+      <material name="magenta">
+        <color rgba="1 0 1 1"/>
+      </material>
+    </visual>
+  </link>
+  <link name="forearm_link">
+    <visual>
+      <geometry>
+        <box size="0.3 0.05 0.05"/>
+      </geometry>
+      <origin xyz="0.15 0 0"/>
+      <material name="yellow">
+        <color rgba="1 1 0 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <!--Descripción de las juntas-->
+  <joint name="shoulder_joint" type="revolute"> <!--tipo de junta: revolute, prismatic, fixed-->
+    <parent link="base_link"/>
+    <child link="shoulder_link"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-3.14" upper ="3.14"/>
+  </joint>
+  <joint name="arm_joint" type="revolute"> <!--tipo de junta: revolute, prismatic, fixed-->
+    <parent link="shoulder_link"/>
+    <child link="arm_link"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-3.14" upper ="3.14"/>
+    <origin xyz="0.3 0 0"/>
+  </joint>
+  <joint name="forearm_joint" type="revolute"> <!--tipo de junta: revolute, prismatic, fixed-->
+    <parent link="arm_link"/>
+    <child link="forearm_link"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-3.14" upper ="3.14"/>
+    <origin xyz="0.3 0 0"/>
+  </joint>
+</robot>
