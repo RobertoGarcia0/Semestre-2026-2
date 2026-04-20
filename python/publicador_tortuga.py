@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
-from example_interfaces.msg import String
 from geometry_msgs.msg import Twist
 
 class NodoPublicador(Node):
