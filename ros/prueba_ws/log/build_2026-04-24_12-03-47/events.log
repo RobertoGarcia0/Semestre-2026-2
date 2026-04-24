@@ -1,0 +1,7 @@
+[0.000000] (-) TimerEvent: {}
+[0.000265] (paquete_prueba) JobQueued: {'identifier': 'paquete_prueba', 'dependencies': OrderedDict()}
+[0.000313] (paquete_prueba) JobStarted: {'identifier': 'paquete_prueba'}
+[0.099812] (-) TimerEvent: {}
+[0.129951] (paquete_prueba) StderrLine: {'line': b'Traceback (most recent call last):\n  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__\n    rc = await self.task(*args, **kwargs)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__\n    return await task_method(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_python/build.py", line 54, in build\n    data_files = get_data_files_mapping(\n                 ^^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/colcon_core/task/python/__init__.py", line 40, in get_data_files_mapping\n    assert isinstance(sources, list)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n'}
+[0.130453] (paquete_prueba) JobEnded: {'identifier': 'paquete_prueba', 'rc': 1}
+[0.140379] (-) EventReactorShutdown: {}

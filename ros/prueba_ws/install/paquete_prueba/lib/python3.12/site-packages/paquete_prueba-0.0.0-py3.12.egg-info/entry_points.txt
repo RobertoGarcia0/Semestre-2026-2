@@ -1,0 +1,7 @@
+[console_scripts]
+programa_accion_cliente = paquete_prueba.cliente_accion:main
+programa_accion_servidor = paquete_prueba.servidor_accion:main
+programa_cliente = paquete_prueba.cliente:main
+programa_publicador = paquete_prueba.publicador:main
+programa_servidor = paquete_prueba.servidor:main
+programa_suscriptor = paquete_prueba.suscriptor:main

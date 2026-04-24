@@ -1,0 +1,51 @@
+running egg_info
+creating ../../build/paquete_prueba/paquete_prueba.egg-info
+writing ../../build/paquete_prueba/paquete_prueba.egg-info/PKG-INFO
+writing dependency_links to ../../build/paquete_prueba/paquete_prueba.egg-info/dependency_links.txt
+writing entry points to ../../build/paquete_prueba/paquete_prueba.egg-info/entry_points.txt
+writing requirements to ../../build/paquete_prueba/paquete_prueba.egg-info/requires.txt
+writing top-level names to ../../build/paquete_prueba/paquete_prueba.egg-info/top_level.txt
+writing manifest file '../../build/paquete_prueba/paquete_prueba.egg-info/SOURCES.txt'
+reading manifest file '../../build/paquete_prueba/paquete_prueba.egg-info/SOURCES.txt'
+writing manifest file '../../build/paquete_prueba/paquete_prueba.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/robotics/Dev/ros/prueba_ws/build/paquete_prueba/build
+creating /home/robotics/Dev/ros/prueba_ws/build/paquete_prueba/build/lib
+creating /home/robotics/Dev/ros/prueba_ws/build/paquete_prueba/build/lib/paquete_prueba
+copying paquete_prueba/servidor_accion.py -> /home/robotics/Dev/ros/prueba_ws/build/paquete_prueba/build/lib/paquete_prueba
+copying paquete_prueba/cliente_accion.py -> /home/robotics/Dev/ros/prueba_ws/build/paquete_prueba/build/lib/paquete_prueba
+copying paquete_prueba/cliente.py -> /home/robotics/Dev/ros/prueba_ws/build/paquete_prueba/build/lib/paquete_prueba
+copying paquete_prueba/publicador.py -> /home/robotics/Dev/ros/prueba_ws/build/paquete_prueba/build/lib/paquete_prueba
+copying paquete_prueba/__init__.py -> /home/robotics/Dev/ros/prueba_ws/build/paquete_prueba/build/lib/paquete_prueba
+copying paquete_prueba/servidor.py -> /home/robotics/Dev/ros/prueba_ws/build/paquete_prueba/build/lib/paquete_prueba
+copying paquete_prueba/suscriptor.py -> /home/robotics/Dev/ros/prueba_ws/build/paquete_prueba/build/lib/paquete_prueba
+running install
+running install_lib
+creating /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/python3.12/site-packages/paquete_prueba
+copying /home/robotics/Dev/ros/prueba_ws/build/paquete_prueba/build/lib/paquete_prueba/servidor_accion.py -> /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/python3.12/site-packages/paquete_prueba
+copying /home/robotics/Dev/ros/prueba_ws/build/paquete_prueba/build/lib/paquete_prueba/cliente_accion.py -> /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/python3.12/site-packages/paquete_prueba
+copying /home/robotics/Dev/ros/prueba_ws/build/paquete_prueba/build/lib/paquete_prueba/cliente.py -> /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/python3.12/site-packages/paquete_prueba
+copying /home/robotics/Dev/ros/prueba_ws/build/paquete_prueba/build/lib/paquete_prueba/publicador.py -> /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/python3.12/site-packages/paquete_prueba
+copying /home/robotics/Dev/ros/prueba_ws/build/paquete_prueba/build/lib/paquete_prueba/__init__.py -> /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/python3.12/site-packages/paquete_prueba
+copying /home/robotics/Dev/ros/prueba_ws/build/paquete_prueba/build/lib/paquete_prueba/servidor.py -> /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/python3.12/site-packages/paquete_prueba
+copying /home/robotics/Dev/ros/prueba_ws/build/paquete_prueba/build/lib/paquete_prueba/suscriptor.py -> /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/python3.12/site-packages/paquete_prueba
+byte-compiling /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/python3.12/site-packages/paquete_prueba/servidor_accion.py to servidor_accion.cpython-312.pyc
+byte-compiling /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/python3.12/site-packages/paquete_prueba/cliente_accion.py to cliente_accion.cpython-312.pyc
+byte-compiling /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/python3.12/site-packages/paquete_prueba/cliente.py to cliente.cpython-312.pyc
+byte-compiling /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/python3.12/site-packages/paquete_prueba/publicador.py to publicador.cpython-312.pyc
+byte-compiling /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/python3.12/site-packages/paquete_prueba/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/python3.12/site-packages/paquete_prueba/servidor.py to servidor.cpython-312.pyc
+byte-compiling /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/python3.12/site-packages/paquete_prueba/suscriptor.py to suscriptor.cpython-312.pyc
+running install_data
+creating /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/share/ament_index
+creating /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/share/ament_index/resource_index
+creating /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/share/ament_index/resource_index/packages
+copying resource/paquete_prueba -> /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/share/ament_index/resource_index/packages
+copying package.xml -> /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/share/paquete_prueba
+running install_egg_info
+Copying ../../build/paquete_prueba/paquete_prueba.egg-info to /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/python3.12/site-packages/paquete_prueba-0.0.0-py3.12.egg-info
+running install_scripts
+Installing programa_publicador script to /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/paquete_prueba
+Installing programa_suscriptor script to /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/paquete_prueba
+writing list of installed files to '/home/robotics/Dev/ros/prueba_ws/build/paquete_prueba/install.log'

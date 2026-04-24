@@ -1,0 +1,26 @@
+[0.437s] Invoking command in '/home/robotics/Dev/ros/prueba_ws/src/paquete_prueba': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Dev/ros/prueba_ws/build/paquete_prueba/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/paquete_prueba build --build-base /home/robotics/Dev/ros/prueba_ws/build/paquete_prueba/build install --record /home/robotics/Dev/ros/prueba_ws/build/paquete_prueba/install.log --single-version-externally-managed install_data
+[0.587s] running egg_info
+[0.598s] writing ../../build/paquete_prueba/paquete_prueba.egg-info/PKG-INFO
+[0.598s] writing dependency_links to ../../build/paquete_prueba/paquete_prueba.egg-info/dependency_links.txt
+[0.598s] writing entry points to ../../build/paquete_prueba/paquete_prueba.egg-info/entry_points.txt
+[0.598s] writing requirements to ../../build/paquete_prueba/paquete_prueba.egg-info/requires.txt
+[0.598s] writing top-level names to ../../build/paquete_prueba/paquete_prueba.egg-info/top_level.txt
+[0.621s] reading manifest file '../../build/paquete_prueba/paquete_prueba.egg-info/SOURCES.txt'
+[0.621s] writing manifest file '../../build/paquete_prueba/paquete_prueba.egg-info/SOURCES.txt'
+[0.621s] running build
+[0.621s] running build_py
+[0.621s] running install
+[0.625s] running install_lib
+[0.636s] running install_data
+[0.636s] running install_egg_info
+[0.648s] removing '/home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/python3.12/site-packages/paquete_prueba-0.0.0-py3.12.egg-info' (and everything under it)
+[0.648s] Copying ../../build/paquete_prueba/paquete_prueba.egg-info to /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/python3.12/site-packages/paquete_prueba-0.0.0-py3.12.egg-info
+[0.648s] running install_scripts
+[0.721s] Installing programa_accion_cliente script to /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/paquete_prueba
+[0.721s] Installing programa_accion_servidor script to /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/paquete_prueba
+[0.721s] Installing programa_cliente script to /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/paquete_prueba
+[0.721s] Installing programa_publicador script to /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/paquete_prueba
+[0.721s] Installing programa_servidor script to /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/paquete_prueba
+[0.721s] Installing programa_suscriptor script to /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/paquete_prueba
+[0.721s] writing list of installed files to '/home/robotics/Dev/ros/prueba_ws/build/paquete_prueba/install.log'
+[0.736s] Invoked command in '/home/robotics/Dev/ros/prueba_ws/src/paquete_prueba' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/robotics/Dev/ros/prueba_ws/build/paquete_prueba/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/paquete_prueba build --build-base /home/robotics/Dev/ros/prueba_ws/build/paquete_prueba/build install --record /home/robotics/Dev/ros/prueba_ws/build/paquete_prueba/install.log --single-version-externally-managed install_data

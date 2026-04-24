@@ -1,0 +1,20 @@
+running egg_info
+writing ../../build/paquete_prueba/paquete_prueba.egg-info/PKG-INFO
+writing dependency_links to ../../build/paquete_prueba/paquete_prueba.egg-info/dependency_links.txt
+writing entry points to ../../build/paquete_prueba/paquete_prueba.egg-info/entry_points.txt
+writing requirements to ../../build/paquete_prueba/paquete_prueba.egg-info/requires.txt
+writing top-level names to ../../build/paquete_prueba/paquete_prueba.egg-info/top_level.txt
+reading manifest file '../../build/paquete_prueba/paquete_prueba.egg-info/SOURCES.txt'
+writing manifest file '../../build/paquete_prueba/paquete_prueba.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/python3.12/site-packages/paquete_prueba-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/paquete_prueba/paquete_prueba.egg-info to /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/python3.12/site-packages/paquete_prueba-0.0.0-py3.12.egg-info
+running install_scripts
+Installing programa_publicador script to /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/paquete_prueba
+Installing programa_suscriptor script to /home/robotics/Dev/ros/prueba_ws/install/paquete_prueba/lib/paquete_prueba
+writing list of installed files to '/home/robotics/Dev/ros/prueba_ws/build/paquete_prueba/install.log'
