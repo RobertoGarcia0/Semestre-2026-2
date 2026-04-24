@@ -15,9 +15,9 @@
   <link name="shoulder_link">
     <visual>
       <geometry>
-        <box size="0.3 0.05 0.05"/>
+        <mesh filename="cubo.stl" scale="0.010 0.010 0.010"/>
       </geometry>
-      <origin xyz="0.15 0 0"/>
+      <origin xyz="-0.1 0 -0.15"/>
       <material name="cyan">
         <color rgba="0 1 1 1"/>
       </material>
@@ -52,14 +52,14 @@
     <child link="shoulder_link"/>
     <axis xyz="0 0 1"/>
     <limit lower="-3.14" upper ="3.14"/>
-    <origin rpy="1.57 0 0" xyz="0 0 0"/> <!--roll, pitch, yaw-->
+    <origin rpy="0 0 0" xyz="0 0 0.3"/> <!--roll, pitch, yaw-->
   </joint>
   <joint name="arm_joint" type="revolute"> <!--tipo de junta: revolute, prismatic, fixed-->
     <parent link="shoulder_link"/>
     <child link="arm_link"/>
     <axis xyz="0 0 1"/>
     <limit lower="-3.14" upper ="3.14"/>
-    <origin xyz="0.3 0 0" rpy="0 0 0"/>
+    <origin xyz="0 0 0" rpy="1.57 0 0"/>
   </joint>
   <joint name="forearm_joint" type="revolute"> <!--tipo de junta: revolute, prismatic, fixed-->
     <parent link="arm_link"/>
