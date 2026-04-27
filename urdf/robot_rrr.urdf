@@ -51,21 +51,21 @@
     <parent link="base_link"/>
     <child link="shoulder_link"/>
     <axis xyz="0 0 1"/>
-    <limit lower="-3.14" upper ="3.14"/>
+    <limit lower="-3.14" upper ="3.14" effort="10.0" velocity="10.0"/>
     <origin rpy="1.57 0 0" xyz="0 0 0"/> <!--roll, pitch, yaw-->
   </joint>
   <joint name="arm_joint" type="revolute"> <!--tipo de junta: revolute, prismatic, fixed-->
     <parent link="shoulder_link"/>
     <child link="arm_link"/>
     <axis xyz="0 0 1"/>
-    <limit lower="-3.14" upper ="3.14"/>
+    <limit lower="-3.14" upper ="3.14" effort="10.0" velocity="10.0"/>
     <origin xyz="0.3 0 0" rpy="0 0 0"/>
   </joint>
   <joint name="forearm_joint" type="revolute"> <!--tipo de junta: revolute, prismatic, fixed-->
     <parent link="arm_link"/>
     <child link="forearm_link"/>
     <axis xyz="0 0 1"/>
-    <limit lower="-3.14" upper ="3.14"/>
+    <limit lower="-3.14" upper ="3.14" effort="10.0" velocity="10.0"/>
     <origin xyz="0.3 0 0"/>
   </joint>
 </robot>
