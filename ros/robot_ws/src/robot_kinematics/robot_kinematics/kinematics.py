@@ -44,13 +44,14 @@ class Robot():
     self.t = t
     self.lam, self.lam_dot, self.lam_dot_dot = lam, lam_dot, lam_dot_dot
     pass
-  def def_tray(self, t_f:float, frec:float, 
-               th_i:tuple[float], xi_f:tuple[float]):
+  def def_tray(self, t_f:float=2, frec:float=15, 
+               th_i:tuple[float]=(0.1, 0.1,0.1), 
+               xi_f:tuple[float]=(0.6, 0.1, 0)):
     
     # Posición del efector final substituyendo en la postura (m, rad)
-    xi_i = self.xi_0_p.subs({self.th_1: th_i[0], 
-                             self.th_2: th_i[1], 
-                             self.th_3: th_i[2]})
+    xi_i = self.xi_0_p.subs({self.th1: th_i[0], 
+                             self.th2: th_i[1], 
+                             self.th3: th_i[2]})
     # Muestreo y dt
     self.dt = 1.0/frec
     self.muestras = t_f * frec + 1
@@ -89,8 +90,22 @@ class Robot():
       xi_m[:, i]         = xi_eq.        subs({self.t: t_m[i]})
       xi_dot_m[:, i]     = xi_dot_eq.    subs({self.t: t_m[i]})
       xi_dot_dot_m[:, i] = xi_dot_dot_eq.subs({self.t: t_m[i]})
+    print(xi_m[:, self.muestras - 1])
+    
+    self.xi_m = xi_m
+    self.t_m = t_m
 
-
+  def imp_tray(self):
+    fig, (x_g, z_g, be_g) = plt.subplots(nrows = 1, ncols = 3)
+    fig.suptitle("Posiciones del efector final")
+    x_g.set_title("x")
+    z_g.set_title("z")
+    be_g.set_title("beta")
+    x_g.plot(self.t_m.T,  self.xi_m[0, :].T, color="RED")
+    z_g.plot(self.t_m.T,  self.xi_m[1, :].T, color="green")
+    be_g.plot(self.t_m.T, self.xi_m[2, :].T, color=(0,0,1))
+    plt.show()
+    pass
   def tr_h(self, x=0, y=0, z=0,
                  gamma=0, beta=0, alpha=0):
     t_x = Matrix([[1,          0,           0, x],
@@ -110,6 +125,7 @@ class Robot():
 
 def main():
   robot = Robot()
-  print(robot.J_inv)
+  robot.def_tray()
+  robot.imp_tray()
 if __name__ == "__main__":
   main()
